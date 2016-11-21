@@ -1,3 +1,20 @@
+var fs = require('fs');
+var allScenarios = [];
+
+function loadScenarios (dirname, onError) {
+    var files = fs.readdirSync(dirname);
+    files.forEach (function (file) {
+        content = fs.readFileSync(dirname + file, 'utf-8');
+        allScenarios.push(JSON.parse(content));
+    })
+}
+
+loadScenarios ('scenarios/',
+    function (err) {
+        throw err;
+    }
+)
+
 module.exports = {
     "viewports": [
         {
@@ -16,6 +33,7 @@ module.exports = {
             "height": 768
         }
     ],
+    "scenarios": allScenarios,
     "paths": {
         "bitmaps_reference": "backstop_data/bitmaps_reference",
         "bitmaps_test": "backstop_data/bitmaps_test",
