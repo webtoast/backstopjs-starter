@@ -1,5 +1,4 @@
-{
-    "id": "prod_test",
+module.exports = {
     "viewports": [
         {
             "name": "phone",
