@@ -16,29 +16,6 @@ module.exports = {
             "height": 768
         }
     ],
-    "scenarios": [
-        {
-            "label": "BackstopJS Homepage",
-            "url": "https://garris.github.io/BackstopJS/",
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "selectors": [
-                ".jumbotron",
-                ".row.firstPanel",
-                ".firstPanel .col-sm-4:nth-of-type(2)",
-                ".firstPanel .col-sm-4:nth-of-type(3)",
-                ".firstPanel .col-sm-4:nth-of-type(4)",
-                ".secondPanel",
-                ".finalWords",
-                "footer"
-            ],
-            "readyEvent": null,
-            "delay": 500,
-            "misMatchThreshold" : 0.1,
-            "onBeforeScript": "onBefore.js",
-            "onReadyScript": "onReady.js"
-        }
-    ],
     "paths": {
         "bitmaps_reference": "backstop_data/bitmaps_reference",
         "bitmaps_test": "backstop_data/bitmaps_test",
