@@ -37,14 +37,11 @@ module.exports = {
     "paths": {
         "bitmaps_reference": "backstop_data/bitmaps_reference",
         "bitmaps_test": "backstop_data/bitmaps_test",
-        "casper_scripts": "backstop_data/casper_scripts",
+        "engine_scripts": "backstop_data/engine_scripts/puppet",
         "html_report": "backstop_data/html_report",
         "ci_report": "backstop_data/ci_report"
     },
-    "casperFlags": [
-        "--local-storage-path=./localstorage"
-    ],
-    "engine": "phantomjs",
+    "engine": "puppeteer",
     "report": [
         "browser"
     ],
